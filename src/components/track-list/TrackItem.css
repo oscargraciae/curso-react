@@ -1,0 +1,29 @@
+.track-item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+  align-items: center;
+
+  border-bottom: 2px solid #DEE3E9;
+}
+
+.track-item-image {
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.track-item-title {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.track-item-detail {
+  flex-direction: column;
+}
+
+.track-artist-name {
+  text-transform: uppercase;
+  color: #a2a8b1 !important;
+  font-size: 12px !important;
+}

@@ -1,0 +1,12 @@
+.tracklist {
+  padding-right: 20px;
+}
+
+.tracklist > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tracklist > ul > li {
+  list-style: none;
+}

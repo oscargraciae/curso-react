@@ -1,0 +1,5 @@
+.artists-image-list {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+}

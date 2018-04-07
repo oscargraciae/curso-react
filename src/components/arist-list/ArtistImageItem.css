@@ -1,0 +1,26 @@
+.artist-item {
+  display: flex;
+  flex-direction: row;
+  width: 175px;
+  height: 250px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  border-radius: 6px;
+
+}
+
+.artist-image {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.artist-item a {
+  font-size: 16px;
+  color: white;
+  bottom: 30px;
+  position: absolute;
+}

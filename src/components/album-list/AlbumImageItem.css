@@ -1,0 +1,38 @@
+.album-item {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 280px;
+  text-align: left;
+  justify-content: center;
+  position: relative;
+
+
+}
+
+.album-image {
+  width: 175px;
+  height: 175px;
+  
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+  border-radius: 6px;
+}
+
+.album-bottom {
+  height: 80px;
+  padding: 10px 0px;
+}
+
+.album-item a {
+  font-size: 14px;
+  color: #333;
+}
+
+.album-artist-name {
+  text-transform: uppercase;
+  color: #a2a8b1 !important;
+  font-size: 12px !important;
+}
