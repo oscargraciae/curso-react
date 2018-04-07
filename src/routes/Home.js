@@ -45,11 +45,41 @@ class Home extends React.Component {
     this.setState({ artistTop: artist, albumsTop: album, tracksTop: track, trackCountry: trackCountry });
   }
 
+  onChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  onSubmit = async (e) => {
+    e.preventDefault();
+    // const response = await api.artists.search(this.state.query);
+    // console.log("resultados---->", response);
+
+    this.props.history.push('/search/'+this.state.query);
+  }
+
   render() {
     const { artistTop, albumsTop, tracksTop, trackCountry } = this.state;
     return (
       <Layout>
         <div className="container">
+          <div className="form-search">
+            <div className="row">
+              <div className="col-md-12">
+                <form className="navbar-form navbar-left nav-search-form ng-pristine ng-valid" onSubmit={this.onSubmit} >
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      placeholder="Buscar artista"
+                      className="navbar-input"
+                      value={this.state.query}
+                      onChange={this.onChange}
+                      name="query"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
           <div className="most-popular">
             <h2 className="subtitle">Artistas más populares</h2>
             { artistTop && <ArtistImageList artists={artistTop} /> }

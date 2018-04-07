@@ -17,6 +17,10 @@ const api = {
     async getTopTracksById(id, limit) {
       const response = await axios.get(`${BASE_URL}&method=artist.gettopalbums&mbid=${id}&limit=${limit}`);
       return response.data;
+    },
+    async search(name) {
+      const response = await axios.get(`${BASE_URL}&method=artist.search&artist=${name}`);
+      return response.data;
     }
   },
   albums: {
